@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>video Player</title>
+        <link rel="stylesheet" href="vpstyles.css" />
+
+        <script>
+
+            var vol = 1;
+
+            function playVid() {
+                document.getElementById('vid1').play();
+            }
+
+            function pauseVid() {
+                document.getElementById('vid1').pause();
+            }
+
+            function updateVol(volData) {
+                vol += volData;
+                document.getElementById('vid1').volume = vol;
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <header>
+                
+                <nav>
+                    <div id="nav1">
+                        <h2>Library</h2>
+                    </div>
+
+                    <div id="nav2">
+                        <h2>Songs</h2>
+                        <h2>Album</h2>
+                        <h2>Playlist</h2>
+                    </div>
+                </nav>
+    
+            </header>
+
+            <div id="video">
+                <video id="vid1" src="youtube1.mp4" controls></video>
+            </div>
+
+        </br>
+
+            <div id="button">
+            <button class="btn" onclick="playVid()">Play</button>
+            <button class="btn" onclick="pauseVid()">Pause</button>
+
+            <button class="btn" onclick="updateVol(-0.25)">Volume down</button>
+            <button class="btn" onclick="updateVol(0.25)">Volume up</button>
+            </div>
+
+        </br>
+
+            <div id="listPlayer">
+                <div class="listMusic">
+                    <div class="videoList">
+                        <video class="videoNext" src="youtube2.mp4" controls></video>
+                    </div>
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, consectetur eos. Totam autem error, iure officia omnis assumenda cum sol.</p>
+                    </div>
+
+                </div>
+
+                <div class="listMusic">
+                    <div class="videoList">
+                        <video class="videoNext" src="youtube3.mp4" controls></video>
+                    </div>
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                   consectetur eos. Totam autem error, iure officia omnis assumenda cum sol.</p>
+                    </div>
+
+                </div>
+
+                <div class="listMusic">
+                    <div class="videoList">
+                        <video class="videoNext" src="youtube2.mp4" controls></video>
+                    </div>
+                    <div class="caption">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+                   consectetur eos. Totam autem error, iure officia omnis assumenda cum sol.</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </body>
+</html>

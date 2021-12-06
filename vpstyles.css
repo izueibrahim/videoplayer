@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: skyblue;
+}
+
+
+div#container {
+    width: 500px;
+    height: 850px;
+    /* border: 1px solid green; */
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 9px 9px;
+    
+}
+
+header {
+    width: 500px;
+    height: 80px;
+    background-color: limegreen;
+    border-radius: 9px 9px 0px 0px;
+}
+
+#nav1 {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+#nav2 {
+    width: 400px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+#video {
+    margin: 0 auto;
+    text-align: center;
+    /* padding-top: 5px ; */
+}
+
+#button {
+    text-align: center;
+}
+
+.btn {
+    width: 90px;
+    height: 30px;
+    border: 2px solid aquamarine;
+    border-radius: 12px;
+    background-color: white;
+
+}
+
+#button :hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    box-shadow: 2px 2px cadetblue;
+}
+
+#vid1 {
+    width: 460px;
+    height: 290px;
+}
+
+.listMusic {
+    width: inherit;
+}
+
+#listPlayer {
+    width: 495px;
+    height: 420px;
+    padding: 8px;
+    /* background-color: pink; */
+    
+}
+
+.videoNext {
+    width: 220px;
+    height: 110px;
+}
+
+.listMusic {
+    width: 480px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.videoList {
+    width: 240px;
+    height: 110px;
+    /* background-color: yellow; */
+}
+
+.caption {
+    width: 240px;
+    height: 110px;
+    /* background-color:red; */
+}
